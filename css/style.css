@@ -7,27 +7,35 @@ body {
 	background-color: #ECECEC; 
 }
 
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.clear-fix {
+	clear: both;
+}
 
 #logo-bar img {
 	height: 200px;
 }
 
-#nav-bar {
+#nav-content {
 	height: 40px;
-	background-color: #882433; 
 	border-radius: 5px;
+	background-color: #882433; 
 }
 
 #nav-content ul li {
-	display: inline;
-	list-style: none;
-	text-decoration: none;
-	float: left;
 	line-height: 36px; 
 	padding: 0 30px;
+	border-radius: 5px; 
 	margin: 2px;
 	color: #fff;
-	border-radius: 5px; 
+	list-style: none;
+	text-decoration: none;
+	display: inline;
+	float: left;
 }
 
 #nav-content ul .active, #nav-content ul li:hover {
@@ -35,40 +43,29 @@ body {
 	color: #000;
 }
 
-.container {
-	width: 80%;
-	margin: 0 auto;
-}
-
 #main-content {
 	width: 70%;
 	float: left;
 }
 
-#side-bar-content {
-	width: 30%;
-	float: left;
-}
-
-.clear-fix {
-	clear: both;
-}
-
-
 .article {
-	overflow: auto;
 	padding: 10px 15px;
 	border-radius: 5px;
+	margin: 10px 5px;
 	background-color: #fff;
-	margin: 10px;
+	overflow: auto;
 }
 
-.title {
+#main-content .article {
+	margin-left: 0; 
+}
+
+.article .title {
 	margin: 15px 10px;
 	color: #781a26;
 }
 
-.meta-info {
+.article .meta-info {
 	margin: 15px 10px;
 	font-style: italic;
 	color: #000;
@@ -78,29 +75,38 @@ body {
 	margin: 10px 30px;
 }
 
-#footer {
-	height: 40px;
-	background-color: #882433; 
-	border-radius: 5px;
-	margin-bottom: 20px;
-}
-
-#footer p {
-	color: #fff;
-	text-align: center;
-	line-height: 40px;
-}
-
 .article a {
+	padding:5px 9px;
+	border-radius:5px;
 	display:block;
 	float:right;
-	color:#ffffff;
-	padding:5px 9px;
-	background:#c13046;
-	border-radius:5px;
 	font-size: 16px;
+	color:#ffffff;
+	background-color:#c13046;
 }
 
 .article a:hover {
 	background-color: #000;
 }
+
+#side-bar-content {
+	width: 30%;
+	float: left;
+}
+#side-bar-content .article {
+	margin-right: 0; 
+}
+
+#footer-bar {
+	height: 40px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	background-color: #882433; 
+}
+
+#footer-bar p {
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+}
+
